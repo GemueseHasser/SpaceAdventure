@@ -20,7 +20,7 @@ public class Variablen {
 
     static int gameTimeSecs = 0, gameTimeMinutes = 0;
 
-    static int level = 1;
+    static int level;
 
     static int lineY;
 

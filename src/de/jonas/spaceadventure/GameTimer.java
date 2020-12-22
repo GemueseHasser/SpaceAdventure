@@ -43,24 +43,23 @@ public class GameTimer {
                     Variablen.moveLine = false;
 
                     if (Variablen.gameTimeMinutes == 0 && Variablen.gameTimeSecs >= 13 && Variablen.gameTimeSecs <= 17) {
-                        Variablen.level = 1;
+                        Variablen.level = 2;
                         SendTitle.sendLevel("Du hast 15 Sekunden durchgehalten!", 1);
                     }
 
                     if (Variablen.gameTimeMinutes == 0 && Variablen.gameTimeSecs >= 28 && Variablen.gameTimeSecs <= 32) {
-                        Variablen.level = 2;
+                        Variablen.level = 3;
                         SendTitle.sendLevel("Du hast 30 Sekunden durchgehalten!", 1);
                     }
 
                     if ((Variablen.gameTimeMinutes == 0 && Variablen.gameTimeSecs >= 58) ||
                         (Variablen.gameTimeMinutes == 1 && Variablen.gameTimeSecs <= 2)) {
-                        Variablen.level = 3;
+                        Variablen.level = 4;
                         SendTitle.sendLevel("Du hast eine Minute durchgehalten!", 1);
                     }
 
                     if (Variablen.gameTimeMinutes == 1 && Variablen.gameTimeSecs >= 28 && Variablen.gameTimeSecs <= 32) {
-                        Variablen.level = 4;
-                        SendTitle.sendLevel("Du hast gewonnen!", 2);
+                        Variablen.level = 5;
                         Variablen.isPlaying = false;
                         new Win();
                     }
