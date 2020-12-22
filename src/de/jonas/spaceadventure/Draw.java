@@ -88,6 +88,16 @@ public class Draw extends JLabel {
             g.drawString("Zeit: " + Variablen.gameTimeMinutes + ":" + Variablen.gameTimeSecs, 20, 30);
         }
 
+        if (Variablen.moveLine) {
+            if (Variablen.gameTimeMinutes == 1 && Variablen.gameTimeSecs >= 20) {
+                g.setColor(Color.RED);
+                g.fillRect(0, Variablen.lineY, this.getWidth(), 20);
+            } else {
+                g.setColor(Color.GREEN);
+                g.fillRect(0, Variablen.lineY, this.getWidth(), 6);
+            }
+        }
+
         repaint();
     }
 
