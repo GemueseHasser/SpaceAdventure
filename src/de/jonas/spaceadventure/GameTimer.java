@@ -61,6 +61,7 @@ public class GameTimer {
                     if (Variablen.gameTimeMinutes == 1 && Variablen.gameTimeSecs >= 28 && Variablen.gameTimeSecs <= 32) {
                         Variablen.level = 5;
                         Variablen.isPlaying = false;
+                        Variablen.showRocket = false;
                         new Win();
                     }
 
