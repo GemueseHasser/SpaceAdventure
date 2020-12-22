@@ -39,9 +39,7 @@ public class Win {
         exit.setOpaque(true);
         exit.setBackground(Color.GRAY);
         exit.setForeground(Color.WHITE);
-        exit.addActionListener(actionEvent -> {
-            System.exit(0);
-        });
+        exit.addActionListener(actionEvent -> System.exit(0));
 
         frame.add(label);
         frame.add(button);
