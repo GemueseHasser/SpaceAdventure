@@ -16,6 +16,7 @@ public class ResetGame {
         Variablen.isPlaying = true;
         Variablen.gameTimeSecs = 0;
         Variablen.gameTimeMinutes = 0;
+        Variablen.level = 1;
     }
 
 }
