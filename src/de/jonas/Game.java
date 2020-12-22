@@ -6,6 +6,7 @@ import de.jonas.spaceadventure.CheckCollision;
 import de.jonas.spaceadventure.GUI;
 import de.jonas.spaceadventure.GameTimer;
 import de.jonas.spaceadventure.ImageLoader;
+import de.jonas.spaceadventure.LevelListener;
 import de.jonas.spaceadventure.PlayerMovement;
 
 public class Game {
@@ -22,6 +23,7 @@ public class Game {
         new CalculateOpponents();
         new CheckCollision();
         new GameTimer();
+        new LevelListener();
     }
 
 }
