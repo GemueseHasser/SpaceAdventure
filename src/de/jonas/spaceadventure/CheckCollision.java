@@ -19,6 +19,7 @@ public class CheckCollision {
                     if (Variablen.stoneX[i] >= Variablen.rocketX && Variablen.stoneX[i] <= Variablen.rocketX + 75) {
                         if (Variablen.stoneY[i] >= 385 && Variablen.stoneY[i] <= 400) {
                             Variablen.isPlaying = false;
+                            Variablen.showRocket = false;
                             new Lose();
                         }
                     }
@@ -27,6 +28,7 @@ public class CheckCollision {
                     if (Variablen.meteorX[i] >= Variablen.rocketX && Variablen.meteorX[i] <= Variablen.rocketX + 75) {
                         if (Variablen.meteorY[i] >= 370 && Variablen.meteorY[i] <= 400) {
                             Variablen.isPlaying = false;
+                            Variablen.showRocket = false;
                             new Lose();
                         }
                     }

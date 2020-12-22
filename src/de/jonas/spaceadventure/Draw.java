@@ -37,14 +37,16 @@ public class Draw extends JLabel {
             null
         );
 
-        g.drawImage(
-            ImageLoader.rocket,
-            Variablen.rocketX,
-            Variablen.rocketY,
-            150,
-            150,
-            null
-        );
+        if (Variablen.showRocket) {
+            g.drawImage(
+                ImageLoader.rocket,
+                Variablen.rocketX,
+                Variablen.rocketY,
+                150,
+                150,
+                null
+            );
+        }
 
         for (int i = 0; i < 3; i++) {
             g.drawImage(

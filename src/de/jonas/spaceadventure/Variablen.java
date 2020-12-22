@@ -26,4 +26,6 @@ public class Variablen {
 
     static boolean moveLine = false;
 
+    static boolean showRocket = true;
+
 }
