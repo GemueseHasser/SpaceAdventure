@@ -28,4 +28,6 @@ public class Variablen {
 
     static boolean showRocket = true;
 
+    static boolean[] achievments = {false, false, false, false};
+
 }

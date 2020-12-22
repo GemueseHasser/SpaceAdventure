@@ -18,6 +18,9 @@ public class ResetGame {
         Variablen.gameTimeMinutes = 0;
         Variablen.level = 1;
         Variablen.showRocket = true;
+        for (int i = 0; i < 3; i++) {
+            Variablen.achievments[i] = false;
+        }
     }
 
 }
