@@ -24,7 +24,7 @@ public class Schade {
 
         JButton button = new JButton("Erneut spielen");
         button.setFont(font);
-        button.setBounds(45, 100, 200, 30);
+        button.setBounds(45, 65, 200, 30);
         button.setOpaque(true);
         button.setBackground(Color.GRAY);
         button.setForeground(Color.WHITE);
@@ -33,8 +33,19 @@ public class Schade {
             new ResetGame();
         });
 
+        JButton exit = new JButton("Spiel beenden");
+        exit.setFont(font);
+        exit.setBounds(45, 100, 200, 30);
+        exit.setOpaque(true);
+        exit.setBackground(Color.GRAY);
+        exit.setForeground(Color.WHITE);
+        exit.addActionListener(actionEvent -> {
+            System.exit(0);
+        });
+
         frame.add(label);
         frame.add(button);
+        frame.add(exit);
         frame.setVisible(true);
     }
 
