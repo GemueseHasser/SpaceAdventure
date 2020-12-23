@@ -10,11 +10,11 @@ public class Variablen {
 
     static int[] stoneX = new int[50];
 
-    static int[] meteorX = new int[3];
+    static int[] meteorX = new int[5];
 
     static int[] stoneY = new int[50];
 
-    static int[] meteorY = new int[3];
+    static int[] meteorY = new int[5];
 
     static boolean isPlaying = true;
 
@@ -33,5 +33,7 @@ public class Variablen {
     static int opponentSpeed = 10;
 
     static int activeStones = 5;
+
+    static int activeMeteors = 3;
 
 }

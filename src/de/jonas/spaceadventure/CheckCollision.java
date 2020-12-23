@@ -25,7 +25,7 @@ public class CheckCollision {
                         }
                     }
                 }
-                for (int i = 0; i < 3; i++) {
+                for (int i = 0; i < Variablen.activeMeteors; i++) {
                     if (Variablen.meteorX[i] >= Variablen.rocketX && Variablen.meteorX[i] <= Variablen.rocketX + 75) {
                         if (Variablen.meteorY[i] >= 370 && Variablen.meteorY[i] <= 400) {
                             Variablen.isPlaying = false;

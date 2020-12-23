@@ -23,7 +23,7 @@ public class CalculateOpponents {
                         Variablen.stoneY[i]++;
                     }
                 }
-                for (int i = 0; i < 3; i++) {
+                for (int i = 0; i < Variablen.activeMeteors; i++) {
                     if (Variablen.meteorY[i] >= 600 || Variablen.meteorY[i] == -550) {
                         Variablen.meteorX[i] = random.nextInt(780 - 20 + 1) + 20;
                         Variablen.meteorY[i] = random.nextInt(-20 + 500 + 1) - 500;

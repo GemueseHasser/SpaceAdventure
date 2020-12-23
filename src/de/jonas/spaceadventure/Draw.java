@@ -70,7 +70,7 @@ public class Draw extends JLabel {
             );
         }
 
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < Variablen.activeMeteors; i++) {
             g.drawImage(
                 ImageLoader.meteor,
                 Variablen.meteorX[i],
