@@ -12,35 +12,49 @@ public class LevelListener {
         timer.scheduleAtFixedRate(new TimerTask() {
             @Override
             public void run() {
+                if (!Variablen.isPlaying) {
+                    return;
+                }
                 if (Variablen.level == 1) {
                     return;
                 }
                 if (Variablen.level == 2 && !Variablen.achievments[0]) {
-                    System.out.println("Player achieved level " + Variablen.level);
-                    System.out.println("Do some stuff for level " + Variablen.level);
+                    checkoutLevel(2);
                     Variablen.achievments[0] = true;
                     return;
                 }
                 if (Variablen.level == 3 && !Variablen.achievments[1]) {
-                    System.out.println("Player achieved level " + Variablen.level);
-                    System.out.println("Do some stuff for level " + Variablen.level);
+                    checkoutLevel(3);
                     Variablen.achievments[1] = true;
                     return;
                 }
                 if (Variablen.level == 4 && !Variablen.achievments[2]) {
-                    System.out.println("Player achieved level " + Variablen.level);
-                    System.out.println("Do some stuff for level " + Variablen.level);
+                    checkoutLevel(4);
                     Variablen.achievments[2] = true;
                     return;
                 }
                 if (Variablen.level == 5 && !Variablen.achievments[3]) {
-                    System.out.println("Player achieved level " + Variablen.level);
-                    System.out.println("Do some stuff for level " + Variablen.level);
-                    System.out.println("WIN!");
+                    checkoutLevel(5);
                     Variablen.achievments[3] = true;
                 }
             }
         }, 0, 5);
+    }
+
+    private void checkoutLevel(int state) {
+        LevelChanges changes = new LevelChanges();
+        if (state == 2) {
+            changes.levelTwo();
+        }
+        if (state == 3) {
+            changes.levelThree();
+        }
+        if (state == 4) {
+            changes.levelFour();
+        }
+        if (state == 5) {
+            changes.levelFive();
+        }
     }
 
 }

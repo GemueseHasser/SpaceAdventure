@@ -11,11 +11,6 @@ import de.jonas.spaceadventure.PlayerMovement;
 
 public class Game {
 
-    /**
-     * merged dev/add-levels into current branch;
-     * @param args
-     */
-
     public static void main(String[] args) {
         new GUI();
         new ImageLoader();
