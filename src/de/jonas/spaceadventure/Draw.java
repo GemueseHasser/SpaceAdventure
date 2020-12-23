@@ -48,7 +48,7 @@ public class Draw extends JLabel {
             );
         }
 
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < 4; i++) {
             g.drawImage(
                 ImageLoader.stone,
                 Variablen.stoneX[i],
@@ -59,7 +59,7 @@ public class Draw extends JLabel {
             );
         }
 
-        for (int i = 3; i < 5; i++) {
+        for (int i = 4; i < Variablen.activeStones; i++) {
             g.drawImage(
                 ImageLoader.stone,
                 Variablen.stoneX[i],

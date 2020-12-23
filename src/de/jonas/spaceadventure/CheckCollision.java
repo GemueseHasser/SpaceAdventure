@@ -15,11 +15,12 @@ public class CheckCollision {
                 if (!Variablen.isPlaying) {
                     return;
                 }
-                for (int i = 0; i < 5; i++) {
+                for (int i = 0; i < Variablen.activeStones; i++) {
                     if (Variablen.stoneX[i] >= Variablen.rocketX && Variablen.stoneX[i] <= Variablen.rocketX + 75) {
                         if (Variablen.stoneY[i] >= 385 && Variablen.stoneY[i] <= 400) {
                             Variablen.isPlaying = false;
                             Variablen.showRocket = false;
+                            Variablen.activeStones = 50;
                             new Lose();
                         }
                     }
@@ -29,6 +30,7 @@ public class CheckCollision {
                         if (Variablen.meteorY[i] >= 370 && Variablen.meteorY[i] <= 400) {
                             Variablen.isPlaying = false;
                             Variablen.showRocket = false;
+                            Variablen.activeStones = 50;
                             new Lose();
                         }
                     }

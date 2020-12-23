@@ -8,11 +8,11 @@ public class Variablen {
 
     static int rocketX = 320, rocketY = 420;
 
-    static int[] stoneX = new int[5];
+    static int[] stoneX = new int[50];
 
     static int[] meteorX = new int[3];
 
-    static int[] stoneY = new int[5];
+    static int[] stoneY = new int[50];
 
     static int[] meteorY = new int[3];
 
@@ -29,5 +29,9 @@ public class Variablen {
     static boolean showRocket = true;
 
     static boolean[] achievments = {false, false, false, false};
+
+    static int opponentSpeed = 10;
+
+    static int activeStones = 5;
 
 }

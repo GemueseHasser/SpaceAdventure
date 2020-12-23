@@ -15,7 +15,7 @@ public class CalculateOpponents {
         timer.scheduleAtFixedRate(new TimerTask() {
             @Override
             public void run() {
-                for (int i = 0; i < 5; i++) {
+                for (int i = 0; i < Variablen.activeStones; i++) {
                     if (Variablen.stoneY[i] >= 600 || Variablen.stoneY[i] == -550) {
                         Variablen.stoneX[i] = random.nextInt(780 - 20 + 1) + 20;
                         Variablen.stoneY[i] = random.nextInt(-20 + 500 + 1) - 500;
@@ -32,7 +32,7 @@ public class CalculateOpponents {
                     }
                 }
             }
-        }, 0, 10);
+        }, 0, Variablen.opponentSpeed);
     }
 
     public void initialize() {

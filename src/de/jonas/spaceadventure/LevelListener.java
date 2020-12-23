@@ -34,7 +34,6 @@ public class LevelListener {
                     return;
                 }
                 if (Variablen.level == 5 && !Variablen.achievments[3]) {
-                    checkoutLevel(5);
                     Variablen.achievments[3] = true;
                 }
             }
@@ -51,9 +50,6 @@ public class LevelListener {
         }
         if (state == 4) {
             changes.levelFour();
-        }
-        if (state == 5) {
-            changes.levelFive();
         }
     }
 

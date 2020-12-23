@@ -21,6 +21,8 @@ public class ResetGame {
         for (int i = 0; i < 3; i++) {
             Variablen.achievments[i] = false;
         }
+        Variablen.activeStones = 5;
+        Variablen.opponentSpeed = 10;
     }
 
 }
