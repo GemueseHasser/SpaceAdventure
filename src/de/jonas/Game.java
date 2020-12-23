@@ -11,11 +11,6 @@ import de.jonas.spaceadventure.PlayerMovement;
 
 public class Game {
 
-    /**
-     * Development-Branch
-     * @param args das ist egal
-     */
-
     public static void main(String[] args) {
         new GUI();
         new ImageLoader();
