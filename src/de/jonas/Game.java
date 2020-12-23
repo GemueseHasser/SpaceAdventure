@@ -8,6 +8,7 @@ import de.jonas.spaceadventure.GameTimer;
 import de.jonas.spaceadventure.ImageLoader;
 import de.jonas.spaceadventure.LevelListener;
 import de.jonas.spaceadventure.PlayerMovement;
+import de.jonas.spaceadventure.WriteInfosInConfig;
 
 public class Game {
 
@@ -24,6 +25,7 @@ public class Game {
         new CheckCollision();
         new GameTimer();
         new LevelListener();
+        new WriteInfosInConfig();
     }
 
 }

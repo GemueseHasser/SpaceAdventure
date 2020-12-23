@@ -13,6 +13,7 @@ public class CalculateOpponents {
         timer = new Timer();
         random = new Random();
         timer.scheduleAtFixedRate(new TimerTask() {
+
             @Override
             public void run() {
                 for (int i = 0; i < Variablen.activeStones; i++) {
